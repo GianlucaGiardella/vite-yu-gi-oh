@@ -11,8 +11,20 @@ export default {
 </script>
 
 <template>
-  <Search />
-  <CardList />
+  <main>
+    <Search />
+    <CardList />
+  </main>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+main {
+  width: 1000px;
+  padding: 0.5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+</style>
