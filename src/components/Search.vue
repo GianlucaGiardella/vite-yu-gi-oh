@@ -2,6 +2,17 @@
 export default {};
 </script>
 
-<template></template>
+<template>
+  <select>
+    <option value="0" selected>Alien</option>
+  </select>
+</template>
 
-<style></style>
+<style lang="scss" scoped>
+select {
+  padding: 0.5rem;
+  border: unset;
+  border-radius: 0.2rem;
+  background-color: white;
+}
+</style>
