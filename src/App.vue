@@ -26,4 +26,9 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: sans-serif;
+  background-color: #d48f38;
+}
 </style>
