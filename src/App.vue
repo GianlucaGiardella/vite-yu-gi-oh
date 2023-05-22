@@ -31,4 +31,8 @@ body {
   font-family: sans-serif;
   background-color: #d48f38;
 }
+
+ul {
+  list-style-type: none;
+}
 </style>
