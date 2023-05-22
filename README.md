@@ -6,4 +6,12 @@
 
 # SETUP componenti
 
-# App Header (template)
+# App Header (template, style)
+
+# APP Main (template, style)
+
+# App CardList (template, style)
+
+# App Card (template, style)
+
+# store js
