@@ -21,7 +21,7 @@ export default {
 main {
   width: 1000px;
   padding: 0.5rem;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   display: flex;
   flex-direction: column;
   align-items: start;
