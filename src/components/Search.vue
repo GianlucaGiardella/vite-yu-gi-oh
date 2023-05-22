@@ -11,6 +11,7 @@ export default {};
 <style lang="scss" scoped>
 select {
   padding: 0.5rem;
+  padding-inline-end: 4rem;
   border: unset;
   border-radius: 0.2rem;
   background-color: white;
