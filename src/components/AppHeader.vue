@@ -11,8 +11,11 @@ export default {};
 
 <style lang="scss" scoped>
 header {
+  padding: 0.5rem;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  background-color: white;
 }
 
 header {
