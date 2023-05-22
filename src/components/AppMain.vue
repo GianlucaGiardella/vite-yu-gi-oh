@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  width: 1000px;
+  width: 1280px;
   padding: 0.5rem;
   margin: 1rem auto 0;
   display: flex;
