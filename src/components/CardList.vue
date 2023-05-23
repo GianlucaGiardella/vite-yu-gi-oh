@@ -1,4 +1,5 @@
 <script>
+import Results from "./Results.vue";
 import Card from "./Card.vue";
 import { store } from "../store";
 
@@ -9,25 +10,32 @@ export default {
     };
   },
   components: {
+    Results,
     Card,
   },
 };
 </script>
 
 <template>
-  <ul>
-    <Card
-      v-for="card in store.cardList"
-      :key="card.id"
-      :cardObj="card"
-      class="flex-item"
-    />
-  </ul>
+  <div>
+    <Results />
+    <ul>
+      <Card
+        v-for="card in store.cardList"
+        :key="card.id"
+        :cardObj="card"
+        class="flex-item"
+      />
+    </ul>
+  </div>
 </template>
 
 <style lang="scss" scoped>
+div {
+  padding: 2rem;
+  background-color: white;
+}
 ul {
-  padding: 1rem;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   column-gap: 1rem;
