@@ -13,15 +13,25 @@ export default {
     Results,
     Card,
   },
+  computed: {
+    filteredCardList() {
+      return this.store.cardList.filter((card) => {
+        return (
+          this.store.filter.value === "Tutti" ||
+          this.store.filter.value === card.archetype
+        );
+      });
+    },
+  },
 };
 </script>
 
 <template>
   <div>
-    <Results />
+    <Results :cardFound="filteredCardList.length" />
     <ul>
       <Card
-        v-for="card in store.cardList"
+        v-for="card in filteredCardList"
         :key="card.id"
         :cardObj="card"
         class="flex-item"
