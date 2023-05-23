@@ -1,10 +1,25 @@
 <script>
-export default {};
+import { store } from "../store";
+
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+};
 </script>
 
 <template>
-  <select>
-    <option value="0" selected>Alien</option>
+  <select v-model="store.filter.value">
+    <option value="Tutti">Tutti</option>
+    <option
+      v-for="archetype in store.filter.archetypes"
+      :key="archetype.archetype_name"
+      :value="archetype.archetype_name"
+    >
+      {{ archetype.archetype_name }}
+    </option>
   </select>
 </template>
 
