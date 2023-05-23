@@ -30,11 +30,6 @@ li {
 }
 
 li {
-  img {
-    display: block;
-    width: 100%;
-  }
-
   h2 {
     font-size: 1rem;
     text-align: center;
