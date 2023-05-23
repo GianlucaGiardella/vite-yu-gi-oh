@@ -7,12 +7,15 @@ export default {
       store,
     };
   },
+  props: {
+    cardFound: Number,
+  },
 };
 </script>
 
 <template>
   <div class="results">
-    <p>Found {{ store.cardList.length }} cards</p>
+    <p>Found {{ cardFound }} cards in {{ store.cardList.length }}</p>
   </div>
 </template>
 
