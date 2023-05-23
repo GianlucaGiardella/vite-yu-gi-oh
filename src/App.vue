@@ -31,18 +31,9 @@ export default {
 </template>
 
 <style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use "./assets/styles/generals.scss" as *;
 
 body {
-  font-family: sans-serif;
   background-color: #d48f38;
-}
-
-ul {
-  list-style-type: none;
 }
 </style>
