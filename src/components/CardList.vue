@@ -42,14 +42,17 @@ export default {
 
 <style lang="scss" scoped>
 div {
+  width: 100%;
   padding: 2rem;
   background-color: white;
 }
 ul {
+  height: 540px;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   column-gap: 1rem;
   row-gap: 1rem;
   background-color: white;
+  overflow-y: scroll;
 }
 </style>
