@@ -30,12 +30,7 @@ export default {
   <div>
     <Results :cardFound="filteredCardList.length" />
     <ul>
-      <Card
-        v-for="card in filteredCardList"
-        :key="card.id"
-        :cardObj="card"
-        class="flex-item"
-      />
+      <Card v-for="card in filteredCardList" :key="card.id" :cardObj="card" />
     </ul>
   </div>
 </template>

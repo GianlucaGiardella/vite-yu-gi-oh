@@ -15,10 +15,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.flex-item {
-  flex: 0 0 20%;
-}
-
 li {
   padding-bottom: 0.5rem;
   display: flex;
